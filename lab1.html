@@ -17,7 +17,7 @@
         </p>
 
         <h2>Purpose</h2>
-        <p>The purpose of Lab 1 was to get familiar with the Artemis board and the Arduino IDE by implementing examples included in __ libraries.
+        <p>The purpose of Lab 1 was to get familiar with the Artemis board and the Arduino IDE by implementing examples included in Apollo3 libraries.
         </p>
 
         <h2>Examples</h2>
@@ -31,7 +31,7 @@
         <p>This Arduino file blinks the blue LED on the Artemis board by turning it on and off periodically.
             This video shows LED blinking on the Artemis board.
         </p>
-        <iframe width="420" height="315" mute="1" src="https://youtube.com/shorts/KX4ubp7mcCs?feature=shareY"> </iframe>
+        <iframe width="420" height="315" src="https://youtube.com/shorts/KX4ubp7mcCs?feature=shareY"> </iframe>
 
         <h3>Serial</h3>
         <p>This Arduino file demonstrates how the serial monitor works. 
@@ -51,8 +51,36 @@
 
 
         <h3>Analog Read</h3>
+        <p>In the Analog Read example, the Artemis' ADC converter reads analog voltages.
+            On the Artemis board, analog voltages can be read in four different ways: 
+            differential pairs,
+            the internal die temperature,
+            the internal VCC voltage, and
+            the internal VSS voltage. This example prints each of these values to the serial monitor. </p>
+
+        <p>In this video, I show how Artemis senses the warmth of my hand. 
+            Before touching the microcontroller, the temperature reads about 32000 on the serial monitor. 
+            This value corresponds to the internal die temperature.
+            After holding the microcontroller for a few seconds, the temperature reads about 33000.
+            There is a brief delay because it takes time for the heat from my hand to transfer to the microcontroller.
+        </p>
+
+        <iframe width="420" height="315" src="https://youtube.com/shorts/f_hg_gVaJlU"> </iframe>
+
+
 
         <h3>Microphone Output</h3>
+        <p>This Apollo3 example demonstrates the Artemis boards' microphone.
+            It displays the loudest (most powerful) frequency heard to the serial monitor.
+        </p>
+
+        <p>In this video, I play various notes on a piano synthesizer. 
+            The serial monitor displays the changing frequencies which correspond to different notes.
+        </p>
+
+
+        <iframe width="420" height="315" src="https://youtu.be/9rYAfqhA9WI"> </iframe>
+        
 
 
 
