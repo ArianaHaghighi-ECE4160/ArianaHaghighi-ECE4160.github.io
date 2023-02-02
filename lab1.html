@@ -2,19 +2,64 @@
 <html>
     <head>
         <title>Ariana Haghighi's ECE 4160 Website</title>
-
     </head>
 
     <body>
-		<image src="./arianaHeadshot.jpeg" alt="headshot of Ariana Haghighi"></image>
-        <br>
         <b>Ariana Haghighi's ECE 4160 Website</b>
-        <b>Lab 1</b>
+        <h1>Lab 1: The Artemis Board</h1>
+
+        <h2>Background: Microcontrollers and the Artemis Board</h2>
+
+        <p>Microcontrollers are an essential part of robotics; they act as the robot's interface to the world and its motherboard.
+            In this class, we will be using the <a href ="https://www.sparkfun.com/products/15443" target="_blank">SparkFun RedBoard Artemis Nano board</a> to implement various robotics projects. 
+            Despite being small, lightweight, and inexpensive, it has some impressive features
+            including Arduino IDE compatibility, 4 I2C buses, and 2 SPI buses. 
+        </p>
+
+        <h2>Purpose</h2>
+        <p>The purpose of Lab 1 was to get familiar with the Artemis board and the Arduino IDE by implementing examples included in __ libraries.
+        </p>
+
+        <h2>Examples</h2>
+        <p>To run these examples, connect the Artemis board to a computer, typically through a USB-A or USB-C port.
+            Upload the Arduino file to the board.
+            For files that utilize the serial terminal, check that the terminal's baud rate matches the baud rate displayed in the setup() function. 
+
+        </p>
+
+        <h3>Blink It Up</h3>
+        <p>This Arduino file blinks the blue LED on the Artemis board by turning it on and off periodically.
+            This video shows LED blinking on the Artemis board.
+        </p>
+        <iframe width="420" height="315" mute="1" src="https://youtube.com/shorts/KX4ubp7mcCs?feature=shareY"> </iframe>
+
+        <h3>Serial</h3>
+        <p>This Arduino file demonstrates how the serial monitor works. 
+            Data is relayed through one of the Artemis' UART peripherals.
+            In this example, a variable called count is incremented ten times and its value is printed to the serial monitor.
+            After this task, the user can input a string and see it printed in the serial monitor.
+            In this first image, the value of count in displayed. I also typed the word "hello" and it is printed below the values of count</p>
+
+            <img src="./lab1_serial1.jpeg" alt="Serial Monitor Outputs the Value of Count as it increases from 0 to 9" width="240" height="320"/>
+
+
+            <p>In this second image, I typed the word "goodbye" and it is printed on the next line under "hello."</p>
+            <img src="./lab1_serial2.jpeg" alt="Serial Monitor Outputs the string Goodbye" width="240" height="320"/>
+
+            <p>While sending strings across the Artemis' UART peripheral seems instantaneous to us, a serial print is a relatively expensive task.</p>
+
+
+
+        <h3>Analog Read</h3>
+
+        <h3>Microphone Output</h3>
+
+
+
 
         <ul>
-            <li href="./lab1.html">Lab 1</li>
-            <li>Lab 2</li>
-            <li>Lab 3</li>
+            <li><a href="./lab1.html">Lab 1</a></li>
+           
         </ul>
 
     </body>
